@@ -1,0 +1,172 @@
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ common styles _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+@font-face {
+	font-family: light_font;
+	src: url(../media/font/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: regular_font;
+	src: url(../media/font/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: bold_font;
+	src: url(../media/font/roboto/Roboto-Bold.ttf);
+}
+
+body, html {
+    margin: 0px; padding: 0px;
+}
+
+.section_title {
+    padding: 0 0 50px 0;
+    font-family: regular_font; font-size: 35px; color: rgba(0, 0, 0, 0.875); text-align: center;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ styles for section_1 _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+.section_1 {
+    width: 800px; margin: 100px auto 50px;
+    overflow: hidden; background-color: rgba(0, 0, 0, 0);
+}
+
+.section_1 .photo {
+    float: left;
+    width: 300px; height: 300px;
+
+    background-color: rgba(0, 0, 0, 0.1); background-image: url(../media/photo.jpg); background-size: cover; background-position: center center;
+    border-radius: 80px 20px; transition: 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.section_1 .photo:hover {
+    border-radius: 20px 80px;
+}
+
+.section_1 .extra_about {
+    float: right;
+    width: 450px;
+
+    background-color: rgba(0, 0, 0, 0);
+    font-family: regular_font; font-size: 50px; color: rgba(0, 0, 0, 0.875);
+}
+
+.section_1 .extra_about .level {
+    color: #3366FF;
+}
+
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ styles for section_2 _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+.section_2 {
+    width: 800px; margin: 0 auto 50px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.section_2 table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    border: 3px solid  #3366FF;
+}
+
+.section_2 table td {
+   padding: 25px;
+   font-family: regular_font; font-size: 20px; color: rgba(0, 0, 0, 0.875); text-align: center;
+}
+
+.section_2 .color_yes {
+    width: 20px; height: 20px; margin: 0 auto;
+    border-radius: 50%; background-color: #15b515;
+}
+
+.section_2 .color_no {
+    width: 20px; height: 20px; margin: 0 auto;
+    border-radius: 50%; background-color: #FFCC00;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ features for section_2 _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+.section_2 .feature_expand {
+    width: 100%; height: 100%;
+}
+
+.section_2 .feature_width {
+    width: 250px;
+}
+
+.section_2 .feature_left_text {
+    text-align: left;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ styles for section_3 _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+.section_3 {
+    position: relative;
+    width: 800px; height: 350px; margin: 0 auto 50px;
+
+    font-family: regular_font; font-size: 35px; color: #3366FF;
+    overflow: hidden; background-color: rgba(0, 0, 0, 0); transition: 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.section_3 .for_shadow {
+    position: absolute; top: -100px; left: -50px;
+    width: 100%; height: 100%; padding: 50px;
+
+    box-shadow: 0px -130px 50px 0px #fff inset; transition: 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.section_3 .more_details {
+    position: absolute; bottom: 0; left: 50%;
+    padding: 5px 20px; margin: 0 0 0 -86px;
+
+    font-family: regular_font; font-size: 18px; color: #3366FF;
+    background-color: #fff; border: 3px solid #3366FF; transition: 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.section_3 .more_details:hover {
+    cursor: pointer;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ styles for section_4 _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+.section_4 {
+    width: 800px; margin: 0 auto 50px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.section_4 .form_container {
+}
+
+.section_4 .circle_container {
+    margin: 50px 0 0 0; overflow: hidden;
+}
+
+.section_4 .circle_container .circle {
+    float: left;
+    width: 50px; height: 50px; margin: 0  25px 0 0;
+
+    border: 3px solid #3366FF; transition: 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+    background-position: center center; background-size: cover;
+}
+
+.section_4 .circle_container .circle:hover {
+    cursor: pointer;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ additional options for section_4 _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+.section_4 .circle_container .vk {
+    background-image: url(../media/vk.png);
+}
+
+.section_4 .circle_container .github {
+    background-image: url(../media/github.png);
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ styles for section_5 _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+.section_5 {
+    width: 800px; margin: 0 auto 100px;
+    background-color: rgba(0, 0, 0, 0);
+}
